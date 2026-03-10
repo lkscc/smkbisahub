@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'LKS Cloud Computing Jatim 2026 - Modul 3 Governance Stack (lks-cft-governance-stack)'
+
+# TODO: LKS CHALLENGE (MODUL 3)
+# Lengkapi bagian Resources di bawah ini untuk membuat:
+# 1. AWS S3 Bucket dengan nama lks-logs-smk-[NoPeserta]
+# 2. AWS SQS Queue dengan nama lks-queue-magang
+
+Resources:
+  # Tulis kode S3 Bucket Anda di bawah ini
+  LksLogBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      # TODO: Isi property S3 Bucket
+
+  # Tulis kode SQS Queue Anda di bawah ini
+  LksMagangQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      # TODO: Isi property SQS Queue
+
+Outputs:
+  BucketName:
+    Description: "Nama dari S3 Bucket untuk log"
+    Value: !Ref LksLogBucket
+  QueueUrl:
+    Description: "URL dari SQS Queue"
+    Value: !Ref LksMagangQueue
